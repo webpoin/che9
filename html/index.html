@@ -201,14 +201,30 @@
 	</section>
 
 	<footer>
-		<a href="#">关于我们</a>
-		<a href="#">法律声明</a>
-		<p>Copyright © 2014 che9000 Inc. All rights reserved <br>粤ICP备15013112号-1</p>
+		<div class="center">
+			<a href="#">关于我们</a>
+			<a href="#">法律声明</a>
+			<p>Copyright © 2014 che9000 Inc. All rights reserved <br>粤ICP备15013112号-1</p>
+		</div>
 	</footer>
 
 	
 
 	<script src="js/script.js"></script>
+
+	<script>
+		$(function (argument) {
+			var nav = $('nav');
+			var totop = nav.offset().top;
+			$(window).scroll(function(){
+				if($(this).scrollTop()>totop){
+					nav.not('.fixed') && nav.addClass('fixed');
+				}else{
+					nav.is('.fixed') && nav.removeClass('fixed')
+				}
+			});
+		});
+	</script>
 	
 </body>
 </html>

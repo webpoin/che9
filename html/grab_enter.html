@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<title>Document</title>
+	<!--[if lt IE9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="js/webuploader/webuploader.css">
+	
+</head>
+<body>
+
+
+	<nav class="fixed">
+		<div class="nav">
+			<a href="#">首页</a>
+			<a href="#">维修记录查询</a>
+			<a href="#">车况鉴定</a>
+		</div>
+		<div class="nav_login">
+			1388888888、欢迎登陆che9000二手汽车服务平台
+		</div>
+	</nav>
+
+
+	<div class="main">
+			
+		<aside>
+			<div class="aside_user">
+				<img src="images/aside_user.jpg" >
+				<h2>13888888888</h2>
+				<p>余额：<em>9999.9</em></p>
+				<p><a href="#"><span>充值</span></a></p>
+			</div>
+			<ul>
+				<li><a href="#">维修记录查询</a></li>
+				<li class="active"><a href="#">二手汽车鉴定</a></li>
+				<li><a href="#">我的订单记录</a></li>
+				<li><a href="#">账号设置</a></li>
+				<li><a href="#">登出账号</a></li>
+			</ul>
+		</aside>
+
+
+		<section class="content grab_enter">
+			
+			<h2 class="">
+				订单号：QN150800003
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				品牌：一汽大众
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				佣金：<em>20元</em>
+			</h2>
+
+			<h3>订单处理：</h3>
+
+			<div class="fukrm">
+				<br><br>
+
+				<div class="grab_enter_pic"><img src="images/table_load.png" alt=""></div>
+
+				<cite>
+					<span><em>*</em>最后入店时间:</span>
+					<input type="text"  >
+				</cite>	
+
+				<cite>
+					<span><em>*</em>里程数（KM）：</span>
+					<input type="text"  >
+				</cite>
+
+				<cite>
+					<span><em>*</em>事故次数：</span>
+					<input type="text"  >
+				</cite>
+
+				<cite>
+					<span><em>*</em>上传图片：</span>
+					<button id="picker">上传图片</button>
+				</cite>
+				
+				<cite>
+					<span><em>*</em>检查结果描述：</span>
+					<textarea ></textarea>
+				</cite>
+
+				<cite style="text-align: right;"><span>&nbsp;</span><input type="submit" value=" 确认提交 "></cite>
+
+
+			</div>
+
+			
+		</section>
+
+
+
+	</div>
+
+
+	<section class="guide">
+		<div class="center">
+			<dl>
+				<dt><a href="#"><img src="images/guide_pic1.png" alt="">业务指南</a></dt>
+				<dd><a href="#">如何查询</a></dd>
+				<dd><a href="#">如何鉴定</a></dd>
+				<dd><a href="#">如何检测</a></dd>
+				<dd><a href="#">如何质保</a></dd>
+			</dl>
+			<dl>
+				<dt><a href="#"><img src="images/guide_pic2.png" alt="">交易安全</a></dt>
+				<dd><a href="#">二手车问答</a></dd>
+				<dd><a href="#">服务协议</a></dd>
+				<dd><a href="#">常见问题</a></dd>
+				<dd><a href="#">新手指引</a></dd>
+			</dl>
+			<dl>
+				<dt><a href="#"><img src="images/guide_pic3.png" alt="">服务保障</a></dt>
+				<dd><a href="#">服务与支持</a></dd>
+				<dd><a href="#">经营理念</a></dd>
+				<dd><a href="#">资深团队</a></dd>
+			</dl>
+		</div>
+
+	</section>
+
+
+
+	<footer>
+		<div class="center">
+			<a href="#">关于我们</a>
+			<a href="#">法律声明</a>
+			<p>Copyright © 2014 che9000 Inc. All rights reserved <br>粤ICP备15013112号-1</p>
+		</div>
+	</footer>
+
+	<script src="js/script.js"></script>
+	<script src="js/webuploader/webuploader.js"></script>
+	<script>
+
+		// 文件上传插件 ： WebUploader
+		// demo地址 http://fex.baidu.com/webuploader/demo.html
+		var uploader = WebUploader.create({
+
+			// swf文件路径
+			swf: 'js/Uploader.swf',
+
+			// 文件接收服务端。
+			server: 'http://webuploader.duapp.com/server/fileupload.php',
+
+			// 选择文件的按钮。可选。
+			// 内部根据当前运行是创建，可能是input元素，也可能是flash.
+			pick: '#picker',
+
+			// 不压缩image, 默认如果是jpeg，文件上传前会压缩一把再上传！
+			resize: false,
+			accept: {
+				title: 'Images',
+				extensions: 'gif,jpg,jpeg,bmp,png',
+				mimeTypes: 'image/*'
+			}
+		});
+
+
+	</script>
+</body>
+</html>

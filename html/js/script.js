@@ -681,17 +681,5 @@ $(function(){
 
 
 
-	var nav = $('nav');
-	var totop = nav.offset().top;
-	$(window).scroll(function(){
-		if($(this).scrollTop()>totop){
-			nav.not('.fixed') && nav.addClass('fixed');
-		}else{
-			nav.is('.fixed') && nav.removeClass('fixed')
-		}
-	});
-
-
-
 })
 
