@@ -212,7 +212,7 @@ aside li.active{border-color: #f7a13c;color: #f7a13c;}
 .order_tab h2 a{display: inline-block;border:1px solid transparent;height: 28px;line-height: 28px;padding: 0 10px;}
 .order_tab h2 a.active{border-color: #ededed;background: #fff;color: #f7a13c;}
 .order_search {display: inline-block;position: relative;text-align: left;}
-.order_search input{width: 200px;height: 18px;line-height: 18px;padding: 4px 30px 4px 8px;border:1px solid #cecece;background: #fff;border-radius: 14px;}
+.order_search input{width: 200px;height: 18px;line-height: 18px;outline: none; padding: 4px 30px 4px 8px;border:1px solid #cecece;background: #fff;border-radius: 14px;}
 .order_search button{position: absolute;right: 3px;top: 0;outline: none; height: 28px;line-height: 28px;width: 28px;text-align: center; background: none;border:none;padding: 0;margin: 0;}
 .order_search button img{vertical-align: -5px;}
 
